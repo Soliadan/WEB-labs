@@ -1,0 +1,117 @@
+/* Styles for ProductDetailsView */
+
+.details {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 8%);
+  padding: 24px;
+  max-width: 1000px;
+  margin: 40px auto 80px;
+  color: #1c1d1f;
+}
+
+.details-main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.details-imgbox {
+  flex: 1 1 280px;
+  max-width: 380px;
+}
+
+.details-imgbox img {
+  width: 100%;
+  display: block;
+  height: auto;
+  border-radius: 0;
+  object-fit: cover;
+}
+
+/* Контейнер правої частини */
+.details-info {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  max-width: 460px;
+}
+
+/* текст */
+.details-text {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.details-volume {
+  font-size: 14px;
+}
+
+.details-volume select {
+  padding: 4px 8px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+}
+
+/* кількість */
+.details-quantity {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.details-quantity-controls {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.details-quantity-controls input {
+  width: 60px;
+  text-align: center;
+  padding: 6px 4px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+}
+
+.qty-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+/* ціна */
+.details-price-main {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/* кнопки */
+.details-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.details-actions .btn,
+.details-actions .btn-dark {
+  min-width: 120px;
+}
+
+/* Невелике сповіщення про додавання в кошик */
+.add-to-cart-notification {
+  margin-bottom: 12px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #bbf7d0;
+  background: #ecfdf3;
+  color: #166534;
+  font-size: 14px;
+}
