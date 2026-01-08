@@ -1,0 +1,173 @@
+/* Styles for ProductDetailsView */
+
+.details {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 8%);
+  padding: 24px;
+  max-width: 1000px;
+  margin: 40px auto 80px;
+  color: #1c1d1f;
+}
+
+.details-main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.details-imgbox {
+  flex: 0 0 320px;
+  max-width: 320px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background: #e9d0d0;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.details-imgbox img {
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+  object-fit: cover;
+}
+
+.details-info {
+  flex: 1;
+  min-width: 240px;
+}
+
+.details-info h1 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1c1d1f;
+  margin-bottom: 12px;
+}
+
+.details-text {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #444;
+  margin-bottom: 20px;
+  max-width: 480px;
+}
+
+.details-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.details-form-group {
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  font-weight: 600;
+  color: #1c1d1f;
+  gap: 6px;
+}
+
+.details-form-group input,
+.details-form-group select {
+  border: 1px solid #4b5563;
+  border-radius: 0;
+  padding: 8px 10px;
+  font-size: 14px;
+  min-width: 120px;
+  outline: none;
+}
+
+.details-bottom {
+  border-top: 1px solid #e5e7eb;
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 16px;
+  align-items: center;
+}
+
+.details-price {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1c1d1f;
+}
+
+.details-price-value {
+  font-weight: 700;
+}
+
+.details-action-row {
+  display: flex;
+  gap: 12px;
+}
+
+.btn-outline {
+  border: 2px solid #444;
+  background: transparent;
+  color: #222;
+  padding: 10px 20px;
+  border-radius: 24px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-outline:hover {
+  background: #f1f1f1;
+}
+
+.btn-dark {
+  border: none;
+  background: #444;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 24px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-dark:hover {
+  background: #bd8b8b;
+  color: #fff;
+}
+
+.details-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;          /* відступ між полями */
+  max-width: 420px;
+}
+
+/* один рядок форми */
+.details-form .form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.details-form .form-row label {
+  font-weight: 500;
+}
+
+.details-form .form-row input,
+.details-form .form-row textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font: inherit;
+}
+
+.details-form textarea {
+  min-height: 80px;
+  resize: vertical;
+}
