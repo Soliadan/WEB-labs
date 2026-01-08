@@ -1,0 +1,40 @@
+header {
+    display: flex;
+    height: 150px;
+    background-color: rgb(179, 75, 118);
+    width: 100%;
+    justify-content: space-between;
+}
+
+header h1 {
+    margin-left: 40px;
+    margin-top: 45px;
+    color: rgb(96, 0, 59);
+}
+
+.header__nav {
+    margin-top: 50px;
+}
+
+.header__nav a {
+    font-size: 25px;
+    margin-right: 60px;
+    color: #1F1534;
+
+}
+
+a:hover {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.search_block {
+    margin-top: 40px;
+    margin-right: 15px;
+}
+
+.cancel-button {
+    background-color: rgba(231, 0, 0, 0.786);
+}

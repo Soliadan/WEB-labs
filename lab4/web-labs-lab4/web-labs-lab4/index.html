@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Lab 4</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+<header>
+  <h1>Solomia`s Parfume Shop</h1>
+  <nav class="header__nav">
+    <a onclick="toggleMainPage()">Home</a>
+    <a onclick="toggleCreatePage()">Create</a>
+  </nav>
+  <div class="search_block">
+    <input placeholder="Parfume name..." id="input_search">
+    <button type="button" id="search_btn" class="btn_card" style="width: 100px;">Search</button>
+    <button type="button" id="cancel_search_btn" class="cancel-button btn_card_cansel"
+            style="width: 100px;">Cancel
+    </button>
+  </div>
+</header>
+<main id="main_page" class="main__container">
+  <div class="main__container manager">
+    <div class="sort-goods">
+      <h3>Sort orders by price</h3>
+      <label class="switch">
+        <input type="checkbox" id="sort_objects">
+        <span class="slider round"></span>
+      </label>
+    </div>
+    <div class="count-price">
+      <hr>
+      <div class="block_price">
+        <h3>Count price of all orders:</h3>
+        <span id="count_price"></span>
+      </div>
+      <button type="button" class="btn-primary btn_card" id="count_price_btn"
+              style="width: 100px;">Count
+      </button>
+    </div>
+  </div>
+  <div class="main__container manager-orders">
+    <ul class="orders_list" id="orders_list">
+    </ul>
+  </div>
+</main>
+<main id="create_page" class="create_container">
+  <form id="add_form" class="add-form">
+    <h2>Create order for parfume</h2>
+    <div class="create-block">
+      <span>Parfume name</span>
+      <input type="text" placeholder="Parfume name..." id="parfume_name_input">
+      <span>Volume</span>
+      <textarea type="text" placeholder="Volume.." id="Volume_input"></textarea>
+      <span>Brand</span>
+      <textarea type="number" placeholder="brand.." id="brand_input"></textarea>
+      <span>Release date:</span>
+      <input type="date" id="order_date_input">
+      <span>Price:</span>
+      <input placeholder="Price in $" type="number" id="price_input">
+    </div>
+    <button type="submit" class="btn-download" id="submit_btn">Add order</button>
+  </form>
+</main>
+<main id="edit_page" class="edit_container">
+  <form id="edit_form" class="add-form">
+    <h2>Edit order for parfumes</h2>
+    <div class="create-block">
+      <span>Parfume_name</span>
+      <input type="text" placeholder="parfume_name.." id="edit_parfume_name_input">
+      <span>Volume</span>
+      <textarea type="number" placeholder="Volume.." id="edit_Volume_input"></textarea>
+      <span>Brand</span>
+      <textarea type="text" placeholder="Brand.." id="brand_input"></textarea>
+      <span>Release date:</span>
+      <input type="date" id="edit_order_date_input">
+      <span>Price:</span>
+      <input placeholder="Price in $" type="number" id="edit_price_input">
+    </div>
+    <button type="submit" class="btn-download" id="edit_btn">Edit order</button>
+  </form>
+</main>
+<script src="js/index.js"></script>
+</body>
+
+</html>
