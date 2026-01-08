@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solomia’s Parfume Shop</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<header class="ui-header">
+  <div class="ui-header__bar">
+    <a class="brand" href="#">
+      <span class="brand__logo">🧴</span>
+      <span class="brand__name">Solomia’s</span>
+      <span class="brand__tag">Perfume</span>
+    </a>
+
+    <nav class="nav">
+      <a onclick="toggleMainPage()">Home</a>
+      <a onclick="toggleMainPage()">Products</a>
+      <a onclick="toggleCreatePage()">Create</a>
+    </nav>
+
+    <div class="icons">
+    <a target="_blank" href="https://www.pornhub.com/"><button class="icon" title="Location">📍</button></a>
+      <button class="icon" title="Wishlist">🤍</button>
+      <button class="icon" title="Account">👤</button>
+      <button class="icon cart" title="Cart">$1,689.00</button>
+    </div>
+  </div>
+
+  <div class="search-wide">
+    <input id="input_search" placeholder="Search anything..." />
+    <button id="search_btn" class="btn">Search</button>
+    <button id="cancel_search_btn" class="btn btn--ghost">Cancel</button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero__overlay"></div>
+</section>
+
+<main id="main_page" class="container">
+  <div class="toolbar">
+    <h3>Sort products</h3>
+    <div class="toolbar__right">
+      <label class="switch">
+        <input type="checkbox" id="sort_objects" />
+        <span class="slider round"></span>
+      </label>
+    </div>
+  </div>
+
+  <ul class="perfume-grid" id="orders_list"></ul>
+
+
+  <div id="empty_state" class="empty" style="display:none;">No perfumes yet.</div>
+</main>
+
+<main id="create_page" class="create_container" style="display:none;">
+  <form id="add_form" class="add-form">
+    <h2>Create perfume</h2>
+    <div class="create-block">
+      <label>Perfume name</label>
+      <input type="text" id="parfume_name_input" placeholder="Perfume name..." />
+
+      <label>Volume / Notes</label>
+      <textarea id="Volume_input" placeholder="Volume or Notes..."></textarea>
+
+      <label>Brand</label>
+      <input type="text" id="brand_input" placeholder="Brand..." />
+
+      <label>Release date</label>
+      <input type="date" id="order_date_input" />
+
+      <label>Price, $</label>
+      <input type="number" id="price_input" placeholder="Price in $" />
+    </div>
+    <button type="submit" class="btn-download" id="submit_btn">Add perfume</button>
+  </form>
+</main>
+
+<main id="edit_page" class="edit_container" style="display:none;">
+  <form id="edit_form" class="add-form">
+    <h2>Edit perfume</h2>
+    <div class="create-block">
+      <label>Perfume name</label>
+      <input type="text" id="edit_parfume_name_input" />
+
+      <label>Volume / Notes</label>
+      <textarea id="edit_Volume_input"></textarea>
+
+      <label>Brand</label>
+      <input type="text" id="edit_brand_input" />
+
+      <label>Release date</label>
+      <input type="date" id="edit_order_date_input" />
+
+      <label>Price, $</label>
+      <input type="number" id="edit_price_input" />
+    </div>
+    <button type="submit" class="btn-download" id="edit_btn">Save changes</button>
+  </form>
+</main>
+
+<script src="js/index.js"></script>
+</body>
+</html>
