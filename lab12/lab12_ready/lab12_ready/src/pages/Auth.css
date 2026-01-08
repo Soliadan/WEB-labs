@@ -1,0 +1,78 @@
+/* Новий файл */
+
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 16px;
+  background: #f7f3f3;
+}
+
+.auth-card {
+  width: min(520px, 100%);
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.auth-card h1 {
+  margin: 0 0 6px;
+}
+
+.auth-subtitle {
+  margin: 0 0 18px;
+  opacity: 0.75;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field span {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.field input,
+.field select {
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+  outline: none;
+}
+
+.auth-server-error {
+  background: #fee2e2;
+  border: 1px solid #ef4444;
+  color: #7f1d1d;
+  padding: 10px 12px;
+  border-radius: 12px;
+  margin: 10px 0;
+}
+
+.auth-footer {
+  margin: 8px 0 0;
+  font-size: 14px;
+}
+
+.form-errors {
+  background: #fff7ed;
+  border: 1px solid #fdba74;
+  padding: 10px 12px;
+  border-radius: 12px;
+}
+
+.form-errors ul {
+  margin: 0;
+  padding-left: 18px;
+}
